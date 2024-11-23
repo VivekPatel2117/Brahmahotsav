@@ -1,0 +1,44 @@
+.NavbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15dvh;
+    overflow: hidden;
+    /* padding-left: 1.5dvw; */
+    padding-right: 1.5dvw;
+    background: rgba(10, 29, 69, 1);
+}
+.LogoWrapper{
+    width: 30dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LinksConatiner{
+    width: 70dvw;
+}
+.LinksWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3dvw;
+    color: white;
+    font-size: 3dvh;
+    font-weight: 600;
+}
+.LinksWrapper > li{
+    width: 10dvw;
+    text-align: center;
+}
+.DonateButton{
+    padding: 1.5dvh;
+    width: 8dvw;
+    height: 8dvh;
+    border-radius: 15px;
+    border: none;
+    background: rgba(225, 180, 67, 1);
+    font-size: 3dvh;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
