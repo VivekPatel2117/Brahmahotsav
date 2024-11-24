@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";
 import assest1 from "../../assets/slider1.png";
 import styles from "./Home.module.css";
@@ -10,11 +9,14 @@ import group1 from "../../assets/group1.png";
 import group2 from "../../assets/group2.png";
 import group3 from "../../assets/group3.png";
 import group4 from "../../assets/group4.png";
+import PanchDinatmak from "../../components/PanchDinatmak/PanchDinatmak.jsx";
+import Particiapte from "../../components/HowToParticipate/HowToParticipate.jsx";
+import Registrationsec from "../../components/registrationsec/registrationsec.jsx";
+import EventBanner from "../../EventBanner/EventBanner.jsx";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Slider assest={assest1} type={"img"} altText={"Section 1"} />
       <div className={styles.section2}>
         <div className={styles.section2ImgConatiner}>
@@ -43,7 +45,7 @@ export default function Home() {
               </div>
               <div className={styles.WatchNowButtonWrapper}>
                 <button>
-                  <span class="material-symbols-outlined">play_circle</span>{" "}
+                  <span className="material-symbols-outlined">play_circle</span>{" "}
                   Watch
                 </button>
               </div>
@@ -60,10 +62,10 @@ export default function Home() {
               height="315"
               src="https://www.youtube.com/embed/jsmmn4obFAw?si=YhimR65oeSBOtyb3"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
           <div className={styles.LiveEventFooter}>
@@ -101,7 +103,13 @@ export default function Home() {
             <img src={group4} alt="group 4" />
           </div>
         </div>
+        
+          <PanchDinatmak />
+          
       </div>
+          <Particiapte/>
+          <Registrationsec/>
+          <EventBanner/>
     </div>
   );
 }

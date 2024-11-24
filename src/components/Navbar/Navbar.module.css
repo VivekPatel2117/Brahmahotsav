@@ -42,3 +42,12 @@
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
+.NavLink {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .NavLink:hover {
+    color: rgba(225, 180, 67, 1); /* Highlight on hover */
+  }
+  

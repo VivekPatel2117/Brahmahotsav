@@ -1,0 +1,47 @@
+/* EventBanner.css */
+.eventbanner {
+    font-family: 'Sans-serif', Arial, 'Gujarati';
+    text-align: center;
+    background: linear-gradient(to bottom, #f0f8ff, #d7ecf9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .headertext {
+    font-size:x-large;
+    margin-bottom: 20px;
+  }
+  
+  .mahotsavimage {
+    max-width: 300px; 
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .headertext p {
+    margin: 5px 0;
+    color: #555; 
+  }
+  
+  .eventdate {
+    font-weight: bold;
+    color: #f15a24; 
+  }
+  
+  .imagecontainer .central-image {
+    margin: 20px 0;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footertext {
+    font-size: 2rem;
+    color: #ffc107; 
+    margin: 30px;
+    font-family: 'Gujarati', Arial;
+  }
+  
