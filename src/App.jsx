@@ -1,13 +1,7 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home/Home';
+import React from "react";
 
-export default function App() {
-  return (
-    <>
-      <Routes>
-        <Route index path="/" element={<Home />} />
-      </Routes>
-    </>
-  )
+function App() {
+  return <></>;
 }
+
+export default App;
