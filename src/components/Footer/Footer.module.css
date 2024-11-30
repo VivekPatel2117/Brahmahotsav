@@ -1,0 +1,124 @@
+/* Footer Container */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+    font-family: "Arial", sans-serif;
+    padding: 40px 20px;
+  }
+  
+  /* Logo Section */
+  .logoSection {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 16px;
+    font-weight: 300;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  /* Links Container */
+  .linksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+  }
+  
+  .linkGroup {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .footerHeading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f1c40f;
+    text-transform: uppercase;
+  }
+  
+  .linkGroup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkGroup ul li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 5px 0;
+    color: #ddd;
+  }
+  
+  .linkGroup ul li:hover {
+    color: #f1c40f;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Social Media Section */
+  .socialMedia li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    font-size: 14px;
+  }
+  
+  /* Footer Bottom */
+  .footerBottom {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .linksContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .linkGroup {
+      text-align: center;
+      flex: 1 1 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .footerHeading {
+      font-size: 16px;
+    }
+  
+    .linkGroup ul li {
+      font-size: 12px;
+    }
+  
+    .socialMedia li {
+      font-size: 12px;
+    }
+  }
+  
