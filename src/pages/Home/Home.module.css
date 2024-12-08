@@ -299,3 +299,56 @@
     border: none;
     border-radius: 50px;
 }
+.section6{
+    display: grid;
+    gap: 5dvh;
+    height: 200dvh;
+    justify-content: center;
+    align-items: center;
+}
+.section6HeadersImgWrapper{
+    display: flex;
+    height: 15dvh;
+    justify-content: center;
+}
+.section6Headers{
+    display: grid;
+    gap: 2dvh;
+    color: #071738;
+    text-align: center;
+    font-style: italic;
+}
+.section6FootersImgWrapper{
+    display: flex;
+    justify-content: center;
+}
+.section7{
+    height: 80dvh;
+    width: 100%;
+    background-image: url('../../assets/utsavBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.section7Content > p{
+    font-size: 10dvh;
+    color: #071738;
+}
+.section7Content > p > span {
+    color: #FD0000;
+}
+.section7Content > button{
+    height: 8dvh;
+    width: 12dvw;
+    padding: 1%;
+    background-color: #E1B443;
+    color: #071738;
+    border: none;
+    border-radius: 50px;
+    font-size: 3.5dvh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

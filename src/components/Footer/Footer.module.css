@@ -1,0 +1,42 @@
+.FooterWrapper{
+    display: grid;
+    width: inherit;
+    height: 40dvh;
+    padding: 1dvw;
+    grid-template-columns: 1fr 2fr;
+}
+.footerImg{
+    height: auto;
+    width: 25dvw;
+    overflow: hidden;
+}
+.footerImg > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.FooterContent{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2dvw;
+    width: auto;
+}
+.FooterList > ol{
+    list-style: none;
+    font-size: small;
+    display: grid;
+    gap: 1dvh;
+}
+.FooterList > ol li:hover{
+    text-decoration: underline;
+}
+.FooterList > ol li{
+    display: flex;
+    align-items: center;
+    gap: 0.5dvW;
+}
+.FooterHeaders > p{
+    font-size: larger;
+    font-weight: 500;
+}

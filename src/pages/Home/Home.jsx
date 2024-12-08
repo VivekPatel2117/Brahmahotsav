@@ -17,6 +17,10 @@ import rounded1 from "../../assets/rounded1.png";
 import rounded2 from "../../assets/rounded2.png";
 import rounded3 from "../../assets/rounded3.png";
 import rounded4 from "../../assets/rounded4.png";
+import BrahamMahotsavLogo from "../../assets/Braham-Mahotsav-Logo.png";
+import Aradhana from "../../assets/aradhan.png";
+import AradhanaLogo from "../../assets/Aaradhana-Logo.png";
+import Footer from "../../components/Footer/Footer";
 export default function Home() {
   return (
     <div>
@@ -197,6 +201,29 @@ export default function Home() {
           <p>Registration for Brahm Mahotsav Sadhna - Aradhna</p>
         </div>
       </div>
+      <div className={styles.section6}>
+        <div className={styles.section6Headers}>
+          <div className={styles.section6HeadersImgWrapper}>
+            <img src={BrahamMahotsavLogo} alt="Braham-Mahotsav-Logo" />
+          </div>
+          <p>To please the lord, thousands of devotees will Nrutya together in worship</p>
+          <h3>13 to 17 April 2024, 8 PM to 10 PM</h3>
+          </div>
+          <div className={styles.section6ImgWrapper}>
+            <img src={Aradhana} alt="Aradhana" />
+          </div>
+          <div className={styles.section6FootersImgWrapper}>
+            <img src={AradhanaLogo} alt="Aardhana-Logo" />
+          </div>
+      </div>
+      <div className={styles.section7}>
+        <div></div>
+       <div className={styles.section7Content}>
+       <p>Donate for <br /> <span>Brahm Mahotsav</span></p>
+       <button>Donate</button>
+       </div>
+      </div>
+      <Footer/>
     </div>
   );
 }
