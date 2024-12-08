@@ -10,7 +10,13 @@ import group1 from "../../assets/group1.png";
 import group2 from "../../assets/group2.png";
 import group3 from "../../assets/group3.png";
 import group4 from "../../assets/group4.png";
-
+import Frame140 from "../../assets/Frame140.png";
+import Frame141 from "../../assets/Frame141.png";
+import Frame142 from "../../assets/Frame142.png";
+import rounded1 from "../../assets/rounded1.png";
+import rounded2 from "../../assets/rounded2.png";
+import rounded3 from "../../assets/rounded3.png";
+import rounded4 from "../../assets/rounded4.png";
 export default function Home() {
   return (
     <div>
@@ -89,17 +95,106 @@ export default function Home() {
       <div className={styles.section4}>
         <div className={styles.imagesWrapper}>
           <div className={styles.imgBox}>
-            <img src={group1} alt="group 1" />
-          </div>
-          <div className={styles.imgBox}>
-            <img src={group2} alt="group 2" />
+            <img src={group4} alt="group 4" />
           </div>
           <div className={styles.imgBox}>
             <img src={group3} alt="group 3" />
           </div>
           <div className={styles.imgBox}>
-            <img src={group4} alt="group 4" />
+            <img src={group2} alt="group 2" />
           </div>
+          <div className={styles.imgBox}>
+            <img src={group1} alt="group 1" />
+          </div>
+        </div>
+        <div className={styles.aayojanWrapper}>
+            <p className={styles.aayojanHeaders}>Panch Dinatmak Aayojan</p>
+            <div className={styles.aayojanDiv}>
+              <div className={styles.aayojanDivContent}>
+                <div className={styles.aayojanImgWrapper}>
+                  <img src={Frame140} alt="Aayojan Images" className={styles.aayojanIMg} />
+                </div>
+                <div className={styles.aayojanRectWrapper}>
+                  <div className={styles.aayojanRect}>
+                    <h4>પૂજનોત્સવ</h4>
+                    <p>મંત્રોચાર દ્વારા નિત્ય સપ્ત આવર્તનથી પ્રભુનો પૂજનોત્સવ</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.aayojanDivContent}>
+                <div className={styles.aayojanImgWrapper}>
+                  <img src={Frame141} alt="Aayojan Images" className={styles.aayojanIMg} />
+                </div>
+                <div className={styles.aayojanRectWrapper}>
+                  <div className={styles.aayojanRect}>
+                  <h4>મહાભિષેક</h4>
+                  <p>નિત્ય રાજોપચાર પૂજનવિધિ સાથે પ્રભુનો મહાભિષેક</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.aayojanDivContent}>
+                <div className={styles.aayojanImgWrapper}>
+                  <img src={Frame142} alt="Aayojan Images" className={styles.aayojanIMg} />
+                </div>
+                <div className={styles.aayojanRectWrapper}>
+                  <div className={styles.aayojanRect}>
+                  <h4>અન્નકૂટ</h4>
+                  <p>નિત્ય ઘનશ્યામ પ્રભુ આગળ વિવિધ પ્રકારની સામગ્રી દ્વારા અન્નકૂટ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div className={styles.section5}>
+        <div className={styles.howToParticipateSections}>
+            <div className={styles.howToParticipateSectionsHeaders}>
+              <p>How to Participate</p>
+            </div>
+            <div className={styles.howToParticipateSectionsContent}>
+              <div className={styles.howToParticipateBox}>
+                <div className={styles.roundedImg}>
+                  <img src={rounded1} alt="Round img" />
+                </div>
+                <div className={styles.roundedImgText}><p>Har Ghar Zula</p></div>
+                <div className={styles.roundedImgButton}>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div className={styles.howToParticipateBox}>
+                <div className={styles.roundedImg}>
+                  <img src={rounded2} alt="Round img" />
+                </div>
+                <div className={styles.roundedImgText}><p>Atetnd Event at <br /> Surat Gurukul</p></div>
+                <div className={styles.roundedImgButton}>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div className={styles.howToParticipateBox}>
+                <div className={styles.roundedImg}>
+                  <img src={rounded3} alt="Round img" />
+                </div>
+                <div className={styles.roundedImgText}><p>Live Webstream</p></div>
+                <div className={styles.roundedImgButton}>
+                  <button>Learn More</button>
+                </div>
+              </div>
+              <div className={styles.howToParticipateBox}>
+                <div className={styles.roundedImg}>
+                  <img src={rounded4} alt="Round img" />
+                </div>
+                <div className={styles.roundedImgText}><p>Watch On TV Channel</p></div>
+                <div className={styles.roundedImgButton}>
+                  <button>Learn More</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div className={styles.registrationSection}>
+          <div className={styles.registrationSectionButton}>
+            <button>Registration</button>
+          </div>
+          <p>Registration for Brahm Mahotsav Sadhna - Aradhna</p>
         </div>
       </div>
     </div>
