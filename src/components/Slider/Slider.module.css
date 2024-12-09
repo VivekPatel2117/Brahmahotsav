@@ -1,28 +1,54 @@
-.SliderWrapper{
+.SliderWrapper {
     height: 90dvh;
     width: inherit;
     overflow: hidden;
 }
-.assestWrapper{
+
+.assestWrapper {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.assestWrapper > img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+
+.assestWrapper > img,
+.assestWrapper > video {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures the entire content is visible */
 }
+
+/* Tablet screens */
 @media screen and (max-width: 1024px) {
-   .SliderWrapper{
-    height: 100%;
-    width: 100dvw;
-   }
-   .assestWrapper > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    .SliderWrapper {
+        height: 100%;
+        width: 100dvw;
+    }
+
+    .assestWrapper > img,
+    .assestWrapper > video {
+        object-fit: contain; /* Ensures full display */
+    }
 }
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+    .SliderWrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    .assestWrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .assestWrapper > img,
+    .assestWrapper > video {
+        object-fit: contain; /* Prevents clipping */
+        max-height: 100%;
+        max-width: 100%;
+    }
 }

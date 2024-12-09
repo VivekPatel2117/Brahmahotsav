@@ -1,3 +1,7 @@
+.HomeWrapper{
+    display: grid;
+    justify-content: center;
+}
 .section2{
     display: flex;
     justify-content: center;
@@ -88,9 +92,14 @@
     text-align: center;
     -webkit-text-stroke: 0.5px black;
 }
+.section3LiveEventBoxWrapper{
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+}
 .section3LiveEventBox{
     height: 80dvh;
-    width: 130dvh;
+    width: 100dvh;
     border: 5px solid rgba(225, 180, 67, 1);
     border-radius: 15px;
 }
@@ -159,7 +168,6 @@
 }
 .aayojanWrapper{
     width: inherit;
-    height: 100dvh;
     display: grid;
     grid-template-rows: 1fr 2fr;
     justify-content: center;
@@ -180,8 +188,9 @@
 }
 .aayojanDivContent{
     display: grid;
+    grid-template-rows: 70% 30%;
     justify-content: center;
-    height: 60dvh;
+    height: 50dvh;
 }
 .aayojanImgWrapper{
     display: flex;
@@ -357,21 +366,129 @@
     .HomeWrapper{
         display: grid;
         justify-content: center;
-        overflow: hidden;
-        height: auto;
         width: 100dvw;
+    }
+    .section2{
+        height: 95dvh;
     }
     .section2ImgConatiner{
         display: flex;
-        
+        margin-top: 0dvh;
+        width: 100dvw;
+        border-radius: 0%;
+        justify-content: center;
+        background-color: #000000d1;
     }
     .HeadersRightSide{
-        font-size: 3dvh;
+        text-align: center;
+        font-size: 2dvh;
     }
-    .section2RightSideWrapper{
-        padding: 1%;
+    .ContentRightSide{
+        padding: 0% 1.5%;
+        font-size: 2dvh;
+        text-align: center;
+    }
+    .WatchNowButtonWrapper{
+        display: flex;
+        justify-content: center;
     }
     .WatchNowButtonWrapper > button{
         width: 30dvw;
+        text-align: center;
+    }
+    .section3Wrapper{
+        display: flex;
+        justify-content: center;
+        height: 130dvh;
+    }
+    .section3{
+        width: 100dvw;
+    }
+    .section3 > h1{
+        font-size: 7dvh;
+    }
+    .section3LiveEventBox{
+        display: flex;
+        justify-content: center;
+        width: 80dvw;
+        height: 60dvh;
+    }
+    .LiveEventFooterImgDesign{
+        width: 100dvw;
+    }
+    .LiveEventFooterContent{
+        flex-direction: row;
+    }
+    .LiveEventFooterContent > h1{
+        font-size: 4dvh;
+    }
+    .LiveEventFooterContent > p {
+        font-size: 3.5dvh;
+    }
+    .section4{
+        height: 100%;
+    }
+    .imagesWrapper{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: none;
+        height: auto;
+        width: 100dvw;
+        justify-content: center;
+    }
+    .imgBox{
+        height: 35dvh;
+        width: 75dvw;
+    }
+    .aayojanHeaders{
+        font-size: 5dvh;
+        height: fit-content;
+    }
+    .aayojanWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aayojanDiv{
+        /* width: 100dvw; */
+        grid-template-columns: none;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .aayojanDivContent{
+        width: 100dvw;
+        height: 50dvh;
+    }
+    .aayojanImgWrapper{
+        width: 100dvw;
+        height: 35dvh;
+    }
+    .aayojanRectWrapper{
+        width: 100dvw;
+    }
+    .aayojanRect{
+        width: 95dvw;
+    }
+    .howToParticipateSectionsContent{
+        grid-template-columns: none;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .roundedImgButton > button{
+        width: 30dvw;
+    }
+    .howToParticipateSectionsHeaders > p {
+        font-size: 5dvh;
+    }
+    .registrationSection{
+        height: 20dvh;
+    }
+    .registrationSection > p{
+        font-size: 2.2dvh;
+        word-break: keep-all;
+    }
+    .registrationSectionButton > button{
+        margin-top: 2dvh;
+        width: 90dvw;
+        height: 8dvh;
+        font-size: 3dvh;
     }
 }

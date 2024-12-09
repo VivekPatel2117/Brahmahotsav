@@ -86,10 +86,9 @@ export default function Home() {
       <div className={styles.section3Wrapper}>
         <div className={styles.section3}>
           <h1>Live Event</h1>
+          <div className={styles.section3LiveEventBoxWrapper}>
           <div className={styles.section3LiveEventBox}>
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/jsmmn4obFAw?si=YhimR65oeSBOtyb3"
               title="YouTube video player"
               frameborder="0"
@@ -98,13 +97,14 @@ export default function Home() {
               allowfullscreen
             ></iframe>
           </div>
+          </div>
           <div className={styles.LiveEventFooter}>
             <div className={styles.LiveEventFooterImgDesign}>
               <img src={Vector} alt="design svg" />
             </div>
             <div className={styles.LiveEventFooterContent}>
               <h1>2024</h1>
-              <img height={"120"} src={Line} alt="Line" />
+              <img src={Line} alt="Line" />
               <p>
                 Brahm Mahotsav <br /> Celebrations
               </p>
@@ -220,7 +220,7 @@ export default function Home() {
           <div className={styles.registrationSectionButton}>
             <button>Registration</button>
           </div>
-          <p>Registration for Brahm Mahotsav Sadhna - Aradhna</p>
+          <p>Registration for Brahm Mahotsav {mobile && (<br/>)} Sadhna - Aradhna</p>
         </div>
       </div>
       <div className={styles.section6}>
@@ -238,14 +238,6 @@ export default function Home() {
             <img src={AradhanaLogo} alt="Aardhana-Logo" />
           </div>
       </div>
-      <div className={styles.section7}>
-        <div></div>
-       <div className={styles.section7Content}>
-       <p>Donate for <br /> <span>Brahm Mahotsav</span></p>
-       <button>Donate</button>
-       </div>
-      </div>
-      <Footer/>
     </div>
   );
 }
