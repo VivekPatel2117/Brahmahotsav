@@ -15,3 +15,14 @@
     width: 100%;
     object-fit: contain;
 }
+@media screen and (max-width: 1024px) {
+   .SliderWrapper{
+    height: 100%;
+    width: 100dvw;
+   }
+   .assestWrapper > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}

@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2,1fr);
 }
 .section2LeftSideImg{
@@ -351,4 +352,26 @@
     border-radius: 50px;
     font-size: 3.5dvh;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 1024px) {
+    .HomeWrapper{
+        display: grid;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
+        width: 100dvw;
+    }
+    .section2ImgConatiner{
+        display: flex;
+        
+    }
+    .HeadersRightSide{
+        font-size: 3dvh;
+    }
+    .section2RightSideWrapper{
+        padding: 1%;
+    }
+    .WatchNowButtonWrapper > button{
+        width: 30dvw;
+    }
 }

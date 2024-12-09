@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";
 import assest1 from "../../assets/slider1.png";
@@ -22,15 +22,37 @@ import Aradhana from "../../assets/aradhan.png";
 import AradhanaLogo from "../../assets/Aaradhana-Logo.png";
 import Footer from "../../components/Footer/Footer";
 export default function Home() {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1024) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div>
-      <Navbar />
+    <div className={styles.HomeWrapper}>
+      {!mobile && (
+        <Navbar />
+      )}
       <Slider assest={assest1} type={"img"} altText={"Section 1"} />
       <div className={styles.section2}>
         <div className={styles.section2ImgConatiner}>
+          {!mobile && (
           <div className={styles.section2LeftSideImg}>
             <img src={Julo} alt="Ghanshyam Julo" />
           </div>
+          )}
           <div className={styles.section2RightSideWrapper}>
             <div className={styles.section2RightSide}>
               <div className={styles.HeadersRightSide}>
