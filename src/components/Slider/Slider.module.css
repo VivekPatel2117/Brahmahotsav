@@ -1,7 +1,6 @@
 .SliderWrapper {
     height: 90dvh;
     width: inherit;
-    overflow: hidden;
 }
 
 .assestWrapper {
@@ -22,7 +21,6 @@
 /* Tablet screens */
 @media screen and (max-width: 1024px) {
     .SliderWrapper {
-        height: 100%;
         width: 100dvw;
     }
 

@@ -1,6 +1,15 @@
 .HomeWrapper{
     display: grid;
+    grid-template-rows: 1fr 10fr;
+    height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
     justify-content: center;
+}
+.HomeContent{
+    display: grid;
+    justify-content: center;
+    overflow: scroll;
 }
 .section2{
     display: flex;
@@ -313,6 +322,7 @@
     display: grid;
     gap: 5dvh;
     height: 200dvh;
+    width: 100dvw;
     justify-content: center;
     align-items: center;
 }
@@ -395,6 +405,15 @@
     .WatchNowButtonWrapper > button{
         width: 30dvw;
         text-align: center;
+    }
+    .section2RightSide{
+        height: 25dvh;
+    }
+    .section2RightSideWrapper{
+        height: 30dvh;
+    }
+    .section2ImgConatiner, .section2{
+        height: 65dvh;
     }
     .section3Wrapper{
         display: flex;
@@ -490,5 +509,40 @@
         width: 90dvw;
         height: 8dvh;
         font-size: 3dvh;
+    }
+    .section5{
+        height: auto;
+    }
+    .section6{
+        margin-top: 5%;
+        height: auto;
+    }
+    .section6Headers{
+        width: 100dvw;
+    }
+    .section6HeadersImgWrapper{
+        width: 100dvw;
+        display: flex;
+        justify-content: center;
+    }
+    .section6ImgWrapper > img{
+        width: 100dvw;
+    }
+    .section6HeadersImgWrapper > img{
+        width: 90dvw;
+        height: 10dvh;
+    }
+    .section6FootersImgWrapper > img{
+        width: 90dvw;
+    }
+    .section7Content{
+        display: grid;
+        justify-content: center;
+    }
+    .section7Content > p{
+        font-size: 8dvh;
+    }
+    .section7Content > button{
+        width: 80dvw;
     }
 }

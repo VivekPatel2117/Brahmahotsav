@@ -21,6 +21,7 @@ import BrahamMahotsavLogo from "../../assets/Braham-Mahotsav-Logo.png";
 import Aradhana from "../../assets/aradhan.png";
 import AradhanaLogo from "../../assets/Aaradhana-Logo.png";
 import Footer from "../../components/Footer/Footer";
+import MoblieNavbar from "../../components/MoblieNavbar/MoblieNavbar";
 export default function Home() {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -42,9 +43,14 @@ export default function Home() {
 
   return (
     <div className={styles.HomeWrapper}>
-      {!mobile && (
+      {!mobile ? (
+      <div className={styles.HomeNavbar}>
         <Navbar />
+      </div>
+      ): (
+        <MoblieNavbar/>
       )}
+      <div className={styles.HomeContent}>
       <Slider assest={assest1} type={"img"} altText={"Section 1"} />
       <div className={styles.section2}>
         <div className={styles.section2ImgConatiner}>
@@ -237,6 +243,15 @@ export default function Home() {
           <div className={styles.section6FootersImgWrapper}>
             <img src={AradhanaLogo} alt="Aardhana-Logo" />
           </div>
+      </div>
+      <div className={styles.section7}>
+        {!mobile && <div></div>}
+       <div className={styles.section7Content}>
+       <p>Donate for <br /><span>Brahm Mahotsav</span></p>
+       <button>Donate</button>
+       </div>
+      </div>
+      <Footer/>
       </div>
     </div>
   );

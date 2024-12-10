@@ -1,0 +1,68 @@
+.MoblieNavbarWrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100%;
+    width: 100%;
+    background-color: #071738;
+    color: white;
+    gap: 1.8dvh;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+.MoblieNavbarWrapper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MoblieNavbarCelebratioButton{
+    padding: 1.5dvh;
+    width: auto;
+    border-radius: 15px;
+    border: none;
+    background: rgba(225, 180, 67, 1);
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.sidebarWrapper{
+    height: 100dvh;
+    width: 100dvw;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease all;
+}
+.sidebar{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    justify-content: flex-end;
+    width: 75dvw;
+    background-color: #071738;
+}
+.closeWrppaer{
+    padding: 3dvh;
+    height: 5dvh;
+    color: white;
+    width: 60dvw;
+    display: flex;
+    justify-content: end;
+}
+.menuWrapper{
+    display: grid;
+    height: 60dvh;
+    align-items: center
+    ;
+    color: white;
+}
+.menuItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 1dvh;
+    width: 55dvw;
+}
+.activeTab{
+    background-color: white;
+    color: #071738;
+}

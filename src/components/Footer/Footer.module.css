@@ -1,7 +1,7 @@
 .FooterWrapper{
     display: grid;
     width: inherit;
-    height: 40dvh;
+    height: 25dvh;
     padding: 1dvw;
     grid-template-columns: 1fr 2fr;
 }
@@ -39,4 +39,18 @@
 .FooterHeaders > p{
     font-size: larger;
     font-weight: 500;
+}
+@media screen and (max-width: 1024px) {
+    .FooterWrapper{
+        height: 50dvh;
+        grid-template-columns: none;
+    }
+    .FooterContent{
+        padding: 0dvw 3dvw;
+
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footerImg{
+        width: 100dvw;
+    }
 }

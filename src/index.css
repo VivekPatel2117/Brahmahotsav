@@ -9,3 +9,8 @@ p,li,a,h1,g2
 ,h3,h4,h5,h6{
     font-family: "Poppins", sans-serif;
 }
+.activeTab{
+    background-color: white;
+    color: #071738;
+    border-radius: 50px;
+}
