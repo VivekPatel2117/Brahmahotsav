@@ -6,7 +6,6 @@ import image3 from "../../assets/group7.png";
 
 const PanchDinatmak = () => {
   return (
-    <>
       <section className={styles.container}>
         <h2 className={styles.heading}>Panch Dinatmak Ayojan</h2>
         <div className={styles.imageContainer}>
@@ -33,7 +32,6 @@ const PanchDinatmak = () => {
           </div>
         </div>
       </section>
-    </>
   );
 };
 

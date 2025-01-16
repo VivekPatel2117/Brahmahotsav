@@ -1,6 +1,6 @@
 .SliderWrapper{
     height: 90dvh;
-    width: inherit;
+    width: 100dvw;
     overflow: hidden;
 }
 .assestWrapper{
@@ -9,9 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .assestWrapper > img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    overflow: hidden;
 }

@@ -1,8 +1,8 @@
 // EventBanner.jsx
 import React from 'react';
 import styles from './EventBanner.module.css';
-import Logo from '../assets/Braham-Mahotsav-Logo.png';
-import Devotees from '../assets/Devotees.png'
+import Logo from '../../assets/Braham-Mahotsav-Logo.png';
+import Devotees from '../../assets/Devotees.png'
 
 const EventBanner = () => {
   return (

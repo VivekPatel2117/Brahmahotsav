@@ -13,14 +13,11 @@ import PanchDinatmak from "../../components/PanchDinatmak/PanchDinatmak.jsx";
 import Particiapte from "../../components/HowToParticipate/HowToParticipate.jsx";
 import Registrationsec from "../../components/registrationsec/registrationsec.jsx";
 import EventBanner from "../../components/EventBanner/EventBanner.jsx";
-import Navbar from "../../components/Navbar"
-import Footer from "../../components/Footer/Footer.jsx";
-
-
+import Footer from "../../components/Footer/Footer.jsx"
 export default function Home() {
   return (
-    <div>
-      <Navbar/>
+    <div className={styles.homepageStructure}>
+      <div>
       <Slider assest={assest1} type={"img"} altText={"Section 1"} />
       <div className={styles.section2}>
         <div className={styles.section2ImgConatiner}>
@@ -107,14 +104,13 @@ export default function Home() {
             <img src={group4} alt="group 4" />
           </div>
         </div>
-
-        <PanchDinatmak />
-
       </div>
+        <PanchDinatmak />
       <Particiapte />
       <Registrationsec />
       <EventBanner />
       <Footer/>
+      </div>
     </div>
   );
 }
