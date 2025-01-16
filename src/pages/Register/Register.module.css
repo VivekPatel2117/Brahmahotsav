@@ -1,0 +1,97 @@
+.RegisterWrappper{
+    display: grid;
+    grid-template-rows: 25vh auto;
+    margin: 2vh 0vh;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow: scroll;
+}
+.banner{
+    height: 20vh;
+    width: 70vw;
+    overflow: hidden;
+}
+.banner > img{
+    height: 100%;
+    width: 100%;
+}
+.registerBox{
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 12vh auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 29, 69, 1);
+    overflow: scroll;
+    padding: 0% 2%;
+}
+.registerBox > h1{
+    font-weight: 300;
+    padding: 3vh;
+    text-align: center;
+    color: rgba(225, 180, 67, 1);
+}
+.registerBox form{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+}
+.inputBox label{
+    color: white;
+    font-family: "Poppins";
+    padding: 1%;
+}
+.inputBox input{
+    padding: 2vh;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    color: rgb(61, 60, 60);
+    font-size: 15px;
+}
+.buttonWrapper{
+    display: flex;
+    gap: 2vw;
+    margin: 2% 0%;
+}
+.button {
+    background-color: #ffc107; 
+    color: #001844; 
+    font-weight: bold;
+    font-size: 2vh;
+    width: 10vw;
+    padding: 1vh;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ffa000; 
+  }
+  @media only screen and (max-width: 1024px){
+    .RegisterWrappper{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+    }
+    .banner{
+        height: 20vh;
+        width: 100vw;
+    }
+    .registerBox{
+        border-radius: 0px;
+        height: 100vh;
+    }
+    .button{
+        width: 25vw;
+        height: 6vh;
+    }
+  }

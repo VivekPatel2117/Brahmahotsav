@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Registrationsec = () => {
   return (
     <div className={styles.banner}>
-     <Link to="#"> <button className={styles.button}>Registration</button></Link>
+     <Link to="/register"> <button className={styles.button}>Registration</button></Link>
       <p className={styles.description}>
         Registration for Brahm Mahotsav Sadhna - Aradhna
       </p>

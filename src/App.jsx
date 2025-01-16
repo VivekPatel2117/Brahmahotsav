@@ -4,6 +4,8 @@ import Home from "./pages/Home/Home";
 import HowToParticipate from "./components/HowToParticipate/HowToParticipate";
 import Navbar from "./components/Navbar/Navbar";
 import styles from "./App.module.css";
+import Register from "./pages/Register/Register";
+import Footer from "./components/Footer/Footer";
 export default function App() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -22,18 +24,13 @@ export default function App() {
   }, [])
   
   return (
-    <div className={styles.appStructure}>
-      {!isMobile && <Navbar />}
-      <div className={styles.innerBody}>
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route
             index
-            path="/howtoparticipate"
-            element={<HowToParticipate />}
+            path="/register"
+            element={<Register />}
           />
         </Routes>
-      </div>
-    </div>
   );
 }

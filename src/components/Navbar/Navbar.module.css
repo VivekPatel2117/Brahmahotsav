@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 15dvh;
+    width: 100vw; 
     overflow: hidden;
     padding-right: 1.5dvw;
     background: rgba(10, 29, 69, 1);
@@ -39,5 +40,46 @@
     background: rgba(225, 180, 67, 1);
     font-size: 3dvh;
     font-weight: 600;
+    color: rgba(10, 29, 69, 1);
     font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 1024px){
+    .NavbarWrapper{
+        justify-content: space-between;
+        padding: 0vh 1vh;
+        align-items: center;
+    }
+    .LogoWrapper{
+        width: 60vw;
+    }
+    .LogoWrapper > img{
+        height: 100%;
+        width: 100%;
+    }
+    .NavbarWrapper > span{
+        color: white;
+    }
+    .sidebar{
+        position: absolute;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        justify-content: end;
+        top: 12vh;
+        color: white;
+    }
+    .sidebar > ul {
+        display: grid;
+        background-color: rgba(10, 29, 69, 1);
+        width: 70vw;
+        height: inherit;
+        padding-right: 10vw;
+        justify-content: end;
+        list-style: none;
+        grid-template-rows: repeat(6,10vh);
+    }
+    .DonateButton{
+        width: 40vw;
+    }
+   
 }

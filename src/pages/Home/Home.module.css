@@ -1,10 +1,4 @@
-.homepageStructure{
-    display: grid;
-    justify-content: center;
-    height: 85vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
+
 .section2 {
   display: flex;
   justify-content: center;

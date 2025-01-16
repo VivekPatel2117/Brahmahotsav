@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "../../components/Slider/Slider";
 import assest1 from "../../assets/slider1.png";
 import styles from "./Home.module.css";
@@ -14,32 +14,36 @@ import Particiapte from "../../components/HowToParticipate/HowToParticipate.jsx"
 import Registrationsec from "../../components/registrationsec/registrationsec.jsx";
 import EventBanner from "../../components/EventBanner/EventBanner.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import Navbar from "../../components/Navbar/Navbar.jsx";
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
-   useEffect(() => {
-      const handleResize = () => {
-        if (window.innerWidth <= 1024) {
-          setIsMobile(true);
-        } else {
-          setIsMobile(false);
-        }
-      };
-      handleResize();
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener('resize',handleResize)
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1024) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
       }
-    }, [])
-    
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className={styles.homepageStructure}>
+    <div className={"pageStructure"}>
+      <Navbar />
       <div>
         <Slider assest={assest1} type={"img"} altText={"Section 1"} />
         <div className={styles.section2}>
           <div className={styles.section2ImgConatiner}>
-           {!isMobile && <div className={styles.section2LeftSideImg}>
-              <img src={Julo} alt="Ghanshyam Julo" />
-            </div>}
+            {!isMobile && (
+              <div className={styles.section2LeftSideImg}>
+                <img src={Julo} alt="Ghanshyam Julo" />
+              </div>
+            )}
             <div className={styles.section2RightSideWrapper}>
               <div className={styles.section2RightSide}>
                 <div className={styles.HeadersRightSide}>
@@ -99,7 +103,13 @@ export default function Home() {
                 </p>
               </div>{" "}
               <br />
-              <p style={{ textAlign: "center",maxWidth:"100vw",fontSize:"2vh" }}>
+              <p
+                style={{
+                  textAlign: "center",
+                  maxWidth: "100vw",
+                  fontSize: "2vh",
+                }}
+              >
                 ભગવાન શ્રી સ્વામિનારાયણના પ્રાગટ્યોત્સવ પર્વે હર ઘર ઝૂલા,
                 પૂજનોત્સવ તથા આરાધન નૃત્ય દ્વારા <br />
                 ભક્તો બ્રહ્મ મહોત્સવની ઉજવણી કરશે
@@ -127,8 +137,8 @@ export default function Home() {
         <Particiapte />
         <Registrationsec />
         <EventBanner />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
