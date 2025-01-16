@@ -2,7 +2,8 @@
     display: grid;
     justify-content: center;
     height: 85vh;
-    overflow: scroll;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .section2 {
   display: flex;
@@ -15,7 +16,7 @@
   margin-top: 10dvh;
   background-color: black;
   height: 95dvh;
-  width: 80dvw;
+  width: 80vw;
   border-radius: 30px;
   background-image: url("../../assets/slider2.png");
   background-position: center;
@@ -191,4 +192,89 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section2{
+        flex-direction: column;  
+        height: 100vh;  
+        background-image: none;
+    }
+    .section2ImgConatiner{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        background-size: cover;
+        grid-template-columns: none;
+    }
+     .section2RightSide{
+        margin: 0vw 3vw;
+        justify-content: center;
+     }
+    .HeadersRightSide{
+        text-align: center;
+        font-size: 2vh;
+    }
+    .ContentRightSide{
+        justify-content: center;
+        text-align: center;
+    }
+    .WatchNowButtonWrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .WatchNowButtonWrapper > button {
+        width: 40vw;
+    }
+    .section3Wrapper{
+        height: 130vh;
+    }
+    .section3{
+        height: 50vh;
+    }
+    .section3 > h1{
+        font-size: 8vh;
+    }
+    .section3LiveEventBox{
+        display: grid;
+        justify-content: center;
+        height: 40vh;
+        width: 100vh;
+        border: none;
+    }
+    .section3LiveEventBox > iframe {
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        width: 90vw;
+        border: 5px solid rgba(225, 180, 67, 1);
+    }
+    .LiveEventFooterImgDesign{
+        width: 100vw;
+    }
+    .LiveEventFooterImgDesign > img {
+        width: 90vw;
+    }
+    .LiveEventFooterContent{
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+    }
+    .LiveEventFooterContent{
+      font-size: 5vh;
+    }
+    .LiveEventFooter{
+       display: grid;
+    }
+    .section4{
+        height: max-content;
+    }
+    .imagesWrapper{
+        grid-template-columns: none;
+        width: 100vw;
+    }
+    .imgBox{
+        height: 55vh;
+    }
+    
 }

@@ -1,5 +1,5 @@
 .SliderWrapper{
-    height: 90dvh;
+    /* height: auto; */
     width: 100dvw;
     overflow: hidden;
 }
@@ -16,4 +16,9 @@
     width: 100%;
     object-fit: contain;
     overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+    .SliderWrapper{
+        height: auto;
+    }
 }

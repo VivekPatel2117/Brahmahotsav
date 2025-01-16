@@ -47,4 +47,14 @@
     margin: 30px;
     font-family: 'Gujarati', Arial;
   }
-  
+  @media only screen and (max-width: 1024px) {
+    .imagecontainer{
+      max-width: fit-content;
+      overflow: hidden;
+    }
+    .central-image{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
