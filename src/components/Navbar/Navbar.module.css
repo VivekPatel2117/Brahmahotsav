@@ -24,9 +24,10 @@
     list-style: none;
     gap: 3dvw;
     color: white;
-    font-size: 3dvh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
+
 .LinksWrapper > li{
     width: 10dvw;
     text-align: center;

@@ -36,12 +36,12 @@ export default function Navbar() {
           {isSideBarOpen && (
             <div className={styles.sidebar}>
               <ul>
-                <li>Home</li>
+                <li><Link className="link" to={"/"}>Home</Link></li>
                 <li>How to Participate</li>
                 <li>Celebration</li>
                 <li>Flow of events</li>
                 <li>
-                  <Link to={"/register"}>Registration</Link>
+                  <Link className="link" to={"/register"}>Registration</Link>
                 </li>
                 <li className={styles.DonateButtonWrapper}>
                   <button className={styles.DonateButton}>Donate</button>
@@ -57,12 +57,12 @@ export default function Navbar() {
           </div>
           <div className={styles.LinksConatiner}>
             <ul className={styles.LinksWrapper}>
-              <li>Home</li>
+              <li><Link className="link" to={"/"}>Home</Link></li>
               <li>How to Participate</li>
               <li>Celebration</li>
               <li>Flow of events</li>
               <li>
-                <Link to={"/register"}>Registration</Link>
+                <Link className="link" to={"/register"}>Registration</Link>
               </li>
               <li className={styles.DonateButtonWrapper}>
                 <button className={styles.DonateButton}>Donate</button>

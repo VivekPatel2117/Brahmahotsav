@@ -15,6 +15,10 @@
   padding-bottom: 1vh;
   overflow-x: hidden;
 }
+.link{
+  text-decoration: none;
+  color: white;
+}
 @media only screen and (max-width: 1024px){
   .pageStructure{
     grid-template-rows: none;
