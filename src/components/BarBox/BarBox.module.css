@@ -1,0 +1,30 @@
+.BarBoxWrapper{
+    height: 10vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Barbox{
+    display: grid;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 75vw;
+    align-items: center;
+    background-color: rgba(10, 29, 69, 1);
+    color: white;
+    padding: 1vh;
+}
+.itemBox{
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5vh;
+    border-radius: 10px;
+    font-family: "Poppins";
+}
+@media only screen and (max-width: 1024px){
+    .Barbox{
+        width: 90vw;
+    }
+}

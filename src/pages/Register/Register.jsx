@@ -36,7 +36,7 @@ export default function Register() {
     e.preventDefault();
   };
   return (
-    <div className="pageStructure">
+    <div>
       <Navbar />
       <div className={styles.RegisterWrappper}>
         <div className={styles.banner}>
@@ -130,14 +130,12 @@ export default function Register() {
                   </div>
                   <div className={styles.inputBox}>
                     <label htmlFor="q-3">તપ (સાધના) Tap (Sadhana) </label>
-                    <div style={{marginBottom:"5vh"}}>
-                    <select id="branch" name="branch">
+                    <select style={{marginBottom:"5vh"}} id="branch" name="branch">
                       <option value="apple">Apple</option>
                       <option value="banana">Banana</option>
                       <option value="orange">Orange</option>
                       <option value="grape">Grape</option>
                     </select>
-                    </div>
                     <hr />
                   </div>
                   <div className={styles.inputBox}>

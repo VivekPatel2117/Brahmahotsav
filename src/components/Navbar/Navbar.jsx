@@ -37,9 +37,9 @@ export default function Navbar() {
             <div className={styles.sidebar}>
               <ul>
                 <li><Link className="link" to={"/"}>Home</Link></li>
-                <li>How to Participate</li>
+                <li><Link to={"/participate"} className="link">How to Participate</Link></li>
                 <li>Celebration</li>
-                <li>Flow of events</li>
+                <li><Link className="link" to={"/flowofevents"}>Flow of events</Link></li>
                 <li>
                   <Link className="link" to={"/register"}>Registration</Link>
                 </li>
@@ -58,9 +58,9 @@ export default function Navbar() {
           <div className={styles.LinksConatiner}>
             <ul className={styles.LinksWrapper}>
               <li><Link className="link" to={"/"}>Home</Link></li>
-              <li>How to Participate</li>
+              <li><Link to={"/participate"} className="link">How to Participate</Link></li>
               <li>Celebration</li>
-              <li>Flow of events</li>
+              <li><Link className="link" to={"/flowofevents"}>Flow of events</Link></li>
               <li>
                 <Link className="link" to={"/register"}>Registration</Link>
               </li>

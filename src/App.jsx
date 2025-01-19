@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar/Navbar";
 import styles from "./App.module.css";
 import Register from "./pages/Register/Register";
 import Footer from "./components/Footer/Footer";
+import FlowEvents from "./pages/FlowEvents/FlowEvents";
+import Participate from "./pages/Participate/Participate";
 export default function App() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -27,9 +29,16 @@ export default function App() {
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route
-            index
             path="/register"
             element={<Register />}
+          />
+          <Route
+            path="/flowofevents"
+            element={<FlowEvents />}
+          />
+          <Route
+            path="/participate"
+            element={<Participate />}
           />
         </Routes>
   );

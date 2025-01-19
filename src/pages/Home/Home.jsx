@@ -33,7 +33,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={"pageStructure"}>
+    <div style={{width:"100vw",overflow:"hidden"}}>
       <Navbar />
       <div>
         <Slider assest={assest1} type={"img"} altText={"Section 1"} />

@@ -1,0 +1,48 @@
+.FlowEventsContent {
+  background-image: url("../../assets/clouds.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.HeadText {
+  text-align: center;
+  font-size: 10vh;
+  font-family: "Poppins";
+}
+.roundFlowsWrapper {
+  display: grid;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 5vh;
+  /* height: max-content; */
+}
+.roundsFlex {
+  display: flex;
+  width: 75vw;
+  justify-content: center;
+  align-items: center;
+
+}
+.imageRoundBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35vh;
+  width: 30vh;
+  overflow: hidden;
+}
+.imageRoundBox > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media only screen and (max-width: 1024px){
+    .HeadText{
+        font-size: 4vh;
+    }
+    .roundsFlex{
+        width: 90vw;
+    }
+    .imageRoundBox{
+        height: 20vh;
+    }
+}

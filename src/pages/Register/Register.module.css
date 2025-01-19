@@ -2,13 +2,12 @@
     display: grid;
     grid-template-rows: 25vh auto;
     margin: 2vh 0vh;
-    height: 100vh;
+    gap: 5vh;
     width: 100vw;
     justify-content: center;
     overflow: scroll;
 }
 .banner{
-    height: 20vh;
     width: 70vw;
     overflow: hidden;
 }
@@ -21,7 +20,7 @@
     display: grid;
     grid-template-rows: 12vh 87vh;
     width: 70vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgba(10, 29, 69, 1);
     overflow: scroll;
     padding: 0% 2%;
@@ -35,7 +34,7 @@
 .registerBox form{
     display: grid;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .inputBox{
     display: flex;
