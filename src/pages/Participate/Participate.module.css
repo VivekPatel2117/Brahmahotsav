@@ -38,3 +38,16 @@
     height: 100%;
     width: 100%;
 }
+
+@media only screen and (max-width: 1024px){
+    .participationBoxContentImgWrapper{
+        width: 95vw;
+        height: 30vh;
+    }
+    .participationBoxContentBox{
+        width: 90vw;
+    }
+    .participationBoxContent > img{
+        width: 80%;
+    }
+}

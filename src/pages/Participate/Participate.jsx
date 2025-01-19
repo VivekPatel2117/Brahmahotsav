@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import styles from "./Participate.module.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -10,6 +10,22 @@ import Participate1 from "../../assets/participate-1.png";
 import Participate2 from "../../assets/participate-2.png";
 
 export default function Participate() {
+     const [isMobile, setIsMobile] = useState(false);
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth <= 1024) {
+            setIsMobile(true);
+          } else {
+            setIsMobile(false);
+          }
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
+    
   return (
     <div className="participate-wrapper">
       <Navbar />
@@ -63,7 +79,7 @@ export default function Participate() {
               </ul>
             </div>
           </div>
-          <div style={{display:"flex",marginBottom:"15vh",gap:"5vh"}} className={styles.participationBoxContent}>
+          <div style={{display:isMobile ? "grid" : "flex",marginBottom:"15vh",gap:"5vh"}} className={styles.participationBoxContent}>
             <div className={styles.participationBoxContentImgWrapper}>
                 <img src={Participate1} alt="Banner-1" />
             </div>
