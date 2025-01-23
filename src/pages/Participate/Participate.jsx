@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Slider from "../../components/Slider/Slider";
 import ParcipateBanner from "../../assets/participate-banner.png";
 import Vector from "../../assets/Vector.svg";
-import Registrationsec from "../../components/registrationsec/registrationsec";
+import Registrationsec from "../../components/Registrationsec/Registrationsec";
 import Participate1 from "../../assets/participate-1.png";
 import Participate2 from "../../assets/participate-2.png";
 
