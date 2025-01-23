@@ -9,12 +9,12 @@ import group1 from "../../assets/group1.png";
 import group2 from "../../assets/group2.png";
 import group3 from "../../assets/group3.png";
 import group4 from "../../assets/group4.png";
-import PanchDinatmak from "../../components/PanchDinatmak/PanchDinatmak.jsx";
-import Particiapte from "../../components/HowToParticipate/HowToParticipate.jsx";
-import Registrationsec from "../../components/registrationsec/registrationsec.jsx";
-import EventBanner from "../../components/EventBanner/EventBanner.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
-import Navbar from "../../components/Navbar/Navbar.jsx";
+import PanchDinatmak from "../../components/PanchDinatmak/PanchDinatmak";
+import Particiapte from "../../components/HowToParticipate/HowToParticipate";
+import Registrationsec from "../../components/registrationsec/registrationsec";
+import EventBanner from "../../components/EventBanner/EventBanner";
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
