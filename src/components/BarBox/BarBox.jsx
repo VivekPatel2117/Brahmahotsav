@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import styles from "./BarBox.module.css";
-export const BarBox = ({ onSelect = () => {}, itemList = [] }) => {
+const BarBox = ({ onSelect = () => {}, itemList = [] }) => {
    const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
       const handleResize = () => {
@@ -24,7 +24,7 @@ export const BarBox = ({ onSelect = () => {}, itemList = [] }) => {
   
   return (
     <div className={styles.BarBoxWrapper}>
-      <div style={{display:"grid",gridTemplateColumns: `repeat(${itemList.length},${isMobile ? "25vw": "10vw"})`}} className={styles.Barbox}>
+      <div style={{display:"grid",gridTemplateColumns: `repeat(${itemList.length},${isMobile ? "25vw": "1fr"})`}} className={styles.Barbox}>
         {itemList.map((item, index) => (
           <div
             onClick={()=>handleSelectClick(index)}
@@ -40,3 +40,5 @@ export const BarBox = ({ onSelect = () => {}, itemList = [] }) => {
     </div>
   );
 };
+
+export default BarBox;

@@ -38,7 +38,7 @@ export default function Navbar() {
               <ul>
                 <li><Link className="link" to={"/"}>Home</Link></li>
                 <li><Link to={"/participate"} className="link">How to Participate</Link></li>
-                <li>Celebration</li>
+                <li><Link className="link" to={"/celebration"}>Celebration</Link></li>
                 <li><Link className="link" to={"/flowofevents"}>Flow of events</Link></li>
                 <li>
                   <Link className="link" to={"/register"}>Registration</Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
             <ul className={styles.LinksWrapper}>
               <li><Link className="link" to={"/"}>Home</Link></li>
               <li><Link to={"/participate"} className="link">How to Participate</Link></li>
-              <li>Celebration</li>
+              <li><Link className="link" to={"/celebration"}>Celebration</Link></li>
               <li><Link className="link" to={"/flowofevents"}>Flow of events</Link></li>
               <li>
                 <Link className="link" to={"/register"}>Registration</Link>

@@ -8,6 +8,7 @@ import Register from "./pages/Register/Register";
 import Footer from "./components/Footer/Footer";
 import FlowEvents from "./pages/FlowEvents/FlowEvents";
 import Participate from "./pages/Participate/Participate";
+import Celebration from "./pages/Celebration/Celebration";
 export default function App() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -39,6 +40,10 @@ export default function App() {
           <Route
             path="/participate"
             element={<Participate />}
+          />
+           <Route
+            path="/celebration"
+            element={<Celebration />}
           />
         </Routes>
   );

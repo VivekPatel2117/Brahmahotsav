@@ -5,7 +5,7 @@ import FlowBanner from "../../assets/flow-banner.png";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Slider from "../../components/Slider/Slider";
-import { BarBox } from "../../components/BarBox/BarBox";
+import BarBox  from "../../components/BarBox/BarBox";
 export default function FlowEvents() {
   const BarArr = [
     {

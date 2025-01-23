@@ -1,0 +1,82 @@
+.celebrationPageWrapper{
+    background-image: url("../../assets/clouds.png");
+}
+.CelebrationBody{
+    display: grid;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.flexContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin: 0% 2%;
+    margin-bottom: 2%;
+}
+.flexContent > img{
+    height: 45vh;
+    width: 50vw;
+    object-fit: contain;
+}
+.textContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.ImageGrid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,31vw);
+    gap: 2vw;
+}
+.gridImgBox{
+    height: 30vh;
+    width: 30vw;
+    background-color: gray;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.imgBox{
+    display: block;
+    object-fit: contain;
+    height: inherit;
+    width: inherit;
+}
+.imgBox > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.imgBoxActions{
+    display: flex;
+    gap: 1vw;
+    z-index: 1;
+    position: absolute;
+    bottom: -8px;
+    left: 6px;
+    margin-bottom: 5%;
+}
+.imgBoxActions div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 5vh;
+    width: 5vh;
+    background-color: rgba(225, 180, 67, 1);
+    border-radius: 999px;
+}
+@media only screen and (max-width: 1024px){
+ .ImageGrid{
+    grid-template-columns: repeat(2,45vw);
+ }
+    .gridImgBox{
+        width: 45vw;
+        height: 20vh;
+      }
+}
