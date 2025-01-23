@@ -11,7 +11,7 @@ import group3 from "../../assets/group3.png";
 import group4 from "../../assets/group4.png";
 import PanchDinatmak from "../../components/PanchDinatmak/PanchDinatmak";
 import Particiapte from "../../components/HowToParticipate/HowToParticipate";
-import Registrationsec from "../../components/registrationsec/registrationsec";
+import Registrationsec from "../../components/Registrationsec/Registrationsec";
 import EventBanner from "../../components/EventBanner/EventBanner";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
