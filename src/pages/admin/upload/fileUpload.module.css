@@ -66,3 +66,12 @@
     font-size: 1.5vh;
   }
   
+  @media (max-width: 1024px) {
+    .container {
+      width: 80vw;
+    }
+    .button{
+      width: 30vw;
+    }
+  }
+  

@@ -8,6 +8,7 @@ import FlowEvents from "./pages/FlowEvents/FlowEvents";
 import Participate from "./pages/Participate/Participate";
 import Celebration from "./pages/Celebration/Celebration";
 import Login from "./pages/admin/login/login";
+import Dashboard from "./pages/admin/dashboard/dashboard";
 export default function App() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/admin/login" element={<Login/>} />
           <Route path="/admin/register" element={<AdminRegister/>} />
           <Route path="/admin/upload" element={<AdminUpload />} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
         </Routes>
   );
 }
