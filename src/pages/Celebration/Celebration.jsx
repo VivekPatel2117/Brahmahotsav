@@ -48,8 +48,8 @@ export default function Celebration() {
     { logical_name:"VRAT_DIXA",second: "Vrat Dixa" },
     { logical_name:"BAL_PRABHU_POOJAN", second: "Bal Prabhu Poojan" },
     { logical_name:"PRAGATYOTSAV", second: "Pragatyotsav" },
-    { logocal_name:"MAHA_ABHISHEK", second: "Maha Abhishek" },
-    { logocal_name:"EVENT_OPENING", second: "Event Opening" },
+    { logical_name:"MAHA_ABHISHEK", second: "Maha Abhishek" },
+    { logical_name:"EVENT_OPENING", second: "Event Opening" },
   ];
   const updateProcessedData = (selectedMediaType, selectedType) => {
     let filteredData = mediaFiles;
@@ -70,7 +70,6 @@ export default function Celebration() {
   }
   const handleTypeSelect = (type) => {
     setType(type);  
-    alert(type);
     updateProcessedData(mediaType, type);  
   }
   return (
@@ -94,11 +93,11 @@ export default function Celebration() {
                   {file.fileType.includes("image") ? (
                     <img src={file.fileUrl} alt={file.fileName} />
                   ) : file.fileType.includes("video") ? (
-                    <video controls>
+                    <video controls className={styles.video}>
                       <source src={file.fileUrl} type={file.fileType} />
                     </video>
                   ) : file.fileType.includes("audio") && (
-                    <audio controls>
+                    <audio controls className={styles.audio}>
                       <source src={file.fileUrl} type={file.fileType} />
                     </audio>
                   )}
