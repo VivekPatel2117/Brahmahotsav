@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "./fileUpload.module.css";
+import { toast } from "react-toastify";
 
 const FileUpload = () => {
   const [file, setFile] = useState(null);
@@ -27,6 +28,7 @@ const FileUpload = () => {
   };
 
   const handleUpload = async () => {
+    const loadingToast = toast.loading("Uploading file...");
     if (!file) {
       setMessage("Please select a file first.");
       return;
@@ -57,12 +59,26 @@ const FileUpload = () => {
           },
         }
       );
-
+      if (response.status !== 200) {
+        throw new Error("Upload failed");
+      }
+      toast.update(loadingToast, {
+        type: "success",
+        render: "File uploaded successfully!",
+        isLoading: false,
+        autoClose: 2000,
+      });
       setMessage("File uploaded successfully!");
     } catch (error) {
       setMessage("Upload failed. Please try again.");
+      toast.update(loadingToast, {
+        type: "error",
+        render: "Upload failed",
+        isLoading: false,
+        autoClose: 2000,})
     } finally {
       setUploading(false);
+      toast.dismiss();
     }
   };
 

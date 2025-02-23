@@ -15,8 +15,18 @@ import Registrationsec from "../../components/Registrationsec/Registrationsec";
 import EventBanner from "../../components/EventBanner/EventBanner";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import axios from "axios";
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
+  const [links, setLinks] = useState([]);
+  const handleGetLinks = async () => {
+    try {
+      const response = axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/getLinks`);
+      setLinks(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 1024) {

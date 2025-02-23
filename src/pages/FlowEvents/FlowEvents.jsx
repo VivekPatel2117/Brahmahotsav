@@ -9,30 +9,37 @@ import BarBox  from "../../components/BarBox/BarBox";
 export default function FlowEvents() {
   const BarArr = [
     {
+      logical_name: "Mon",
       first: "9 Sep",
       second: "Mon",
     },
     {
+      logical_name: "Tue",
       first: "10 Sep",
       second: "Tue",
     },
     {
+      logical_name: "Wed",
       first: "11 Sep",
       second: "Wed",
     },
     {
+      logical_name: "Thru",
       first: "12 Sep",
       second: "Thr",
     },
     {
+      logical_name: "Fri",
       first: "13 Sep",
       second: "Fri",
     },
     {
+      logical_name: "Sat",
       first: "14 Sep",
       second: "Sat",
     },
     {
+      logical_name: "Sun",
       first: "15 Sep",
       second: "Sun",
     },

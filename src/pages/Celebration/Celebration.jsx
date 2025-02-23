@@ -38,40 +38,56 @@ export default function Celebration() {
   }, []);
 
   const itemList = [
-    { logical_name:"IMAGE",first: <span className="material-symbols-outlined">image</span>, second: "Image" },
-    { logical_name:"VIDEO", first: <span className="material-symbols-outlined">play_circle</span>, second: "Video" },
-    { logocal_name:"AUDIO",first: <span className="material-symbols-outlined">music_note</span>, second: "Kirtans" },
+    {
+      logical_name: "IMAGE",
+      first: <span className="material-symbols-outlined">image</span>,
+      second: "Image",
+    },
+    {
+      logical_name: "VIDEO",
+      first: <span className="material-symbols-outlined">play_circle</span>,
+      second: "Video",
+    },
+    {
+      logocal_name: "AUDIO",
+      first: <span className="material-symbols-outlined">music_note</span>,
+      second: "Kirtans",
+    },
   ];
 
   const itemList2 = [
-    { logical_name:"HAR_GHAR_ZULA", second: "Har Ghar Zula" },
-    { logical_name:"VRAT_DIXA",second: "Vrat Dixa" },
-    { logical_name:"BAL_PRABHU_POOJAN", second: "Bal Prabhu Poojan" },
-    { logical_name:"PRAGATYOTSAV", second: "Pragatyotsav" },
-    { logical_name:"MAHA_ABHISHEK", second: "Maha Abhishek" },
-    { logical_name:"EVENT_OPENING", second: "Event Opening" },
+    { logical_name: "HAR_GHAR_ZULA", second: "Har Ghar Zula" },
+    { logical_name: "VRAT_DIXA", second: "Vrat Dixa" },
+    { logical_name: "BAL_PRABHU_POOJAN", second: "Bal Prabhu Poojan" },
+    { logical_name: "PRAGATYOTSAV", second: "Pragatyotsav" },
+    { logical_name: "MAHA_ABHISHEK", second: "Maha Abhishek" },
+    { logical_name: "EVENT_OPENING", second: "Event Opening" },
   ];
   const updateProcessedData = (selectedMediaType, selectedType) => {
     let filteredData = mediaFiles;
-  
+
     if (selectedMediaType) {
-      filteredData = filteredData.filter((file) => file.fileType.includes(selectedMediaType.toLowerCase()));
+      filteredData = filteredData.filter((file) =>
+        file.fileType.includes(selectedMediaType.toLowerCase())
+      );
     }
-  
+
     if (selectedType) {
-      filteredData = filteredData.filter((file) => file.fileCategory === selectedType);
+      filteredData = filteredData.filter(
+        (file) => file.fileCategory === selectedType
+      );
     }
-  
+
     setProcessedData(filteredData);
   };
   const handleSelectClick = (name) => {
-   setMediaType(name);
-  updateProcessedData(name, type);
-  }
+    setMediaType(name);
+    updateProcessedData(name, type);
+  };
   const handleTypeSelect = (type) => {
-    setType(type);  
-    updateProcessedData(mediaType, type);  
-  }
+    setType(type);
+    updateProcessedData(mediaType, type);
+  };
   return (
     <div className={styles.celebrationPageWrapper}>
       <Navbar />
@@ -96,20 +112,28 @@ export default function Celebration() {
                     <video controls className={styles.video}>
                       <source src={file.fileUrl} type={file.fileType} />
                     </video>
-                  ) : file.fileType.includes("audio") && (
-                    <audio controls className={styles.audio}>
-                      <source src={file.fileUrl} type={file.fileType} />
-                    </audio>
+                  ) : (
+                    file.fileType.includes("audio") && (
+                      <audio controls className={styles.audio}>
+                        <source src={file.fileUrl} type={file.fileType} />
+                      </audio>
+                    )
                   )}
                 </div>
-                <div className={styles.imgBoxActions}>
-                  <div>
-                    <span className="material-symbols-outlined">thumb_up</span>
+                {!file.fileType.includes("video") && (
+                  <div
+                    className={styles.imgBoxActions}
+                  >
+                    <div>
+                      <span className="material-symbols-outlined">thumb_up</span>
+                    </div>
+                    <div
+                      onClick={() => handleDownload(file.fileUrl, file.fileName)}
+                    >
+                      <span className="material-symbols-outlined">download</span>
+                    </div>
                   </div>
-                  <div onClick={() => handleDownload(file.fileUrl, file.fileName)}>
-                    <span className="material-symbols-outlined">download</span>
-                  </div>
-                </div>
+                )}
               </div>
             ))
           ) : (
