@@ -1,9 +1,8 @@
 const express = require("express");
 const multer = require("multer");
 const { createClient } = require("@supabase/supabase-js");
-const mongoose = require("mongoose");
 require("dotenv").config();
-const Upload = require("../models/Uploads"); // Import the Mongoose model
+const Upload = require("../models/uploads"); 
 const router = express.Router();
 // Supabase setup
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_ANON_KEY);
