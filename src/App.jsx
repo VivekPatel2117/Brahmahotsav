@@ -1,13 +1,9 @@
 import React,{useEffect,useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import HowToParticipate from "./components/HowToParticipate/HowToParticipate";
-import Navbar from "./components/Navbar/Navbar";
-import styles from "./App.module.css";
 import AdminRegister from "./pages/admin/register/register";
 import Register from "./pages/Register/Register";
 import AdminUpload from "./pages/admin/upload/fileUpload";
-import Footer from "./components/Footer/Footer";
 import FlowEvents from "./pages/FlowEvents/FlowEvents";
 import Participate from "./pages/Participate/Participate";
 import Celebration from "./pages/Celebration/Celebration";
